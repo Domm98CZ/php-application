@@ -1,0 +1,6 @@
+version: '3.9'
+
+services:
+    app_81:
+        ports:
+            - 80:80

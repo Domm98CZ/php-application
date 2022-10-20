@@ -1,0 +1,6 @@
+version: '3.9'
+
+services:
+    app_81:
+        environment:
+            - VIRTUAL_HOST=${PHP_URL}

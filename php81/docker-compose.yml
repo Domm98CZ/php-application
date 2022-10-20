@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+    app_81:
+        build: .
+        container_name: ${PHP_APPLICATION}
+        restart: unless-stopped
+        environment:
+            - TZ=Europe/Prague
+        volumes:
+            - /docker_volumes/${EVO_APPLICATION}/log/:/var/www/app/log
+            - /docker_volumes/${EVO_APPLICATION}/apache2/:/var/app/apache2
+
+networks:
+    default:
+        external:
+            name: php_network

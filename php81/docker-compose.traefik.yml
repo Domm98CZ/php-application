@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+    app_81:
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.${PHP_APPLICATION}.rule=Host(`${PHP_URL}`)"
+            - "traefik.http.routers.${PHP_APPLICATION}.entrypoints=http,https"
+            - "traefik.http.routers.${PHP_APPLICATION}.tls.certresolver=le"
