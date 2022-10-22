@@ -43,7 +43,7 @@ for e in "${!APACHE_@}"; do
 done
 ###
 
-PHP_WWW_PATH="/var/www/evo"
+PHP_WWW_PATH="/var/www/app"
 
 # Create application folders and set permissions
 mkdir -p -m 777 $PHP_WWW_PATH/temp/cache $PHP_WWW_PATH/log $PHP_WWW_PATH/log/supervisor $PHP_WWW_PATH/log/rabbitmq
