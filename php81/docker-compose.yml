@@ -8,8 +8,8 @@ services:
         environment:
             - TZ=Europe/Prague
         volumes:
-            - /docker_volumes/${EVO_APPLICATION}/log/:/var/www/app/log
-            - /docker_volumes/${EVO_APPLICATION}/apache2/:/var/app/apache2
+            - /docker_volumes/${PHP_APPLICATION}/log/:/var/www/app/log
+            - /docker_volumes/${PHP_APPLICATION}/apache2/:/var/app/apache2
 
 networks:
     default:
